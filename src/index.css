@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Amoura Dating App Design System - Premium black & blue theme */
+
+@layer base {
+  :root {
+    /* Core App Colors - Amoura Brand */
+    --background: 0 0% 0%; /* Pure black */
+    --foreground: 0 0% 100%; /* Pure white */
+
+    --card: 0 0% 5%; /* Subtle dark card background */
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Blue primary color - #1E90FF converted to HSL */
+    --primary: 210 100% 56%; /* Electric blue */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 210 100% 65%; /* Lighter blue for glows */
+
+    --secondary: 0 0% 12%; /* Dark gray for subtle elements */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 210 100% 56%; /* Same as primary for consistency */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%; /* Subtle borders */
+    --input: 0 0% 10%; /* Dark input backgrounds */
+    --ring: 210 100% 56%; /* Blue focus rings */
+
+    --radius: 1rem; /* More rounded for modern feel */
+
+    /* Premium gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 56%), hsl(210 100% 65%));
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 0%), hsl(0 0% 5%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 5%), hsl(0 0% 8%));
+
+    /* Shadows with blue glow */
+    --shadow-primary: 0 10px 30px -10px hsl(210 100% 56% / 0.3);
+    --shadow-glow: 0 0 40px hsl(210 100% 65% / 0.4);
+    --shadow-card: 0 8px 25px -5px hsl(0 0% 0% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
